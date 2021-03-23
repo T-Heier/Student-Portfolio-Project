@@ -14,30 +14,37 @@ body {
     flex-wrap: wrap;
 }
 
-header {
+header, nav, ul {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--dark);
     justify-content: space-between;
 }
 
-h1 {
-    display: inline-block;
+/* nav ul li {
+    display: relative;
+} */
+
+
+/* .page-title {
+    display: flex;
+    flex-wrap: wrap;
     background-color: aquamarine;
     color: var(--dark);
-    font-size: 72px;
+    text-align: center;
+    font-size: 60px;
     padding-left: 20px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+    margin-top: 2%;
+    margin-bottom: 2%;
+} */
 
-header nav {
+/* header nav {
     display: inline;
     justify-content: flex-end;
 
-}
+} */
 
-.hero {
-    width: 100%;
-    max-height: 500rem;
-}
+/* .hero {
+    max-width: 50%;
+    height: auto;
+} */
