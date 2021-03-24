@@ -17,22 +17,30 @@ header, nav {
     background-color: var(--dark);
     display: flex;
     flex-direction: row;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    flex-wrap: wrap;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    margin: 3%;
-    margin-right: 15%;
-    border-bottom: solid var(--aqua-color);
+    position: sticky;
+    top: 1;
+    z-index: 10;
+}
+
+nav a:hover {
+    position: flex;
+    top: calc(10% - 3px);
+    width: 20%;
+    height: 50%;
+    left: 0;
+    background: linear-gradient(black, yellowgreen);
+    transition: 1s;
+    cursor: pointer;
+    color: blue!important;
+}
+
+nav a {
     color: var(--aqua-color);
     background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-color: var(--dark);
@@ -40,9 +48,10 @@ nav {
     background-size: 100% 0.2em;
     background-position: bottom;
     transition: all 0.25s ease-in;
+    padding: 0 10px;
 }
 
-h2 {
+h2, section {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -55,12 +64,13 @@ h2 {
 p {
     font-size: 1.5rem;
     margin-left: 2%;
+    position: relative;
+    left: 400px;
+    bottom: 200px;
 }
 /* Nav options styling */
 .nav-list {
-    flex-direction: row;
-    font-size: 1.4rem;
-    justify-content: flex-end;
+    font-size: 1.8rem;
     text-decoration: none;
     padding: 2rem 4rem;
     color: var(--aqua-color);
@@ -74,7 +84,7 @@ p {
     background-color: aquamarine;
     color: var(--dark);
     text-align: center;
-    font-size: 8rem;
+    font-size: 5rem;
     padding-left: 3%;
     padding-right: 1%;
     margin-top: 2%;
@@ -87,12 +97,11 @@ p {
     max-height: 10rem;
 }
 /* Work picture styling */
-.other-projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: flex-end;
-    flex-direction: row;
+.other-projects img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    margin-left: 40%;
 }
 
 .main-project {
@@ -107,10 +116,16 @@ p {
 
 
 /* Contact list styling */
-div#contact ul {
+#contact ul {
     display: flex;
     justify-content: space-evenly;
     font-size: 2rem;
     position:relative;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {   
+      flex-direction: column;
+    }
 }
