@@ -18,15 +18,15 @@ body {
     width: 100%;
     padding: 15px 0px;
     background-color: rgb(92, 92, 92);
+    transition: all 0.3s ease;
 }
+
 
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-/* logo */
 
 .navbar .logo a {
     font-size: 35px;
@@ -37,6 +37,7 @@ body {
 
 .navbar .logo a span {
     color: orange;
+    transition: 0.3s ease;
 }
 
 .navbar .menu li {
@@ -56,11 +57,29 @@ body {
     color: orange;
 }
 
+/* sticky nav */
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: orange;
+    transition: 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: aquamarine;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: white;
+}
+
+
+
 /* home section */
 
 .home {
     display: flex;
-    background: url(../photos/george-pagan-iii-WwCTFNpZx8g-unsplash.jpg) no-repeat center;
+    background: url(../photos//george-pagan-iii-WwCTFNpZx8g-unsplash.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -89,6 +108,33 @@ body {
 
 .home .home-content .text-3 span{
     color: orange;
+}
+
+/* media queries */
+
+@media (max-width: 947px){
+    .max-width {
+        padding: 0 50px;
+    }
+    .navbar .menu {
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }
 
 
