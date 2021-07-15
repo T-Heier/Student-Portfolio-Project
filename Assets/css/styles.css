@@ -1,19 +1,98 @@
 body {
-    background-image: url('https://wallpaperplay.com/walls/full/9/d/f/104426.jpg');
+    background-color: rgb(75, 75, 75);
     background-repeat: repeat;
     background-size: cover;
     color: white;
 }
 
+.max-width {
+    max-width: 1300px;
+    padding: 0 70px;
+    margin: auto;
+}
+
+/* navbar styling */
 
 .navbar {
-    color:aquamarine;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: rgb(92, 92, 92);
 }
 
-.navbar a {
-    font-size: 20px;
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+/* logo */
+
+.navbar .logo a {
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.navbar .logo a span {
+    color: orange;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navbar .menu li a:hover {
+    color: orange;
+}
+
+/* home section */
+
+.home {
+    display: flex;
+    background: url(../photos/george-pagan-iii-WwCTFNpZx8g-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: orange;
+}
+
 
 #contact {
     color: blue;
 }
+

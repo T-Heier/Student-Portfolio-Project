@@ -3,131 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Project</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./Assets/css/reset.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./Assets/css/styles.css" />
   </head>
 
   <body>
-    <header class="navbar navbar-dark bg-dark">
-      <h1 class="page-title">Trent Heier</h1>
-      <nav class="nav-list">
-        <a href="#about">About Me</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume</a>
-      </nav>
+    <header class="navbar">
+      <div class="max-width">
+        <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+        <nav class="nav-list">
+          <ul class="menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="banner container-fluid">
+    <!-- home section -->
 
-      <div class="banner-text"></div>
-    </div>
-
-    <main class="container">
-      <section id="about">
-        <h2>About me</h2>
-        <p>
-          I am a student enrolled in UCF's Coding Bootcamp. I am having a great
-          time learning about coding and putting it into practice. So far I have
-          gotten to practice with three different programming languages and I
-          hope to be able to master all three. I am interested in video game
-          development and creating 2d pixel art for my games. I am currently
-          working on a space-shooter game with all art assests that I personally
-          drew.
-        </p>
-        <p>
-          The three languages we have worked with so far is HTML, CSS, and
-          Javascript! HTML and CSS have been pretty simple to understand and I
-          was even able to make this very website within a couple of days! This
-          website has been created with the help of Bootstrap framework, along
-          with my personal styling.
-        </p>
-      </section>
-      <!-- card section -->
-      <section id="work" class="container">
-        <h2>Work</h2>
-
-        <div class="work-cards row">
-
-          <div class="col-12 col-md-4">
-
-            <div
-              class="card text-white bg-secondary mb-3"
-              style="width: 20rem; height: 20rem">
-              <img src="./Assets/photos/Screenshot_20210516_151147.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-              <h5 class="card-title">DaBeatz</h5>
-              <p class="card-text">
-                  This was my second project using mySQL database. We used spotify's song library to search and create new playlists.</p>
-              <a href="https://github.com/Murrmaid4/daBeatz" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-
-            <div
-              class="card text-white bg-secondary mb-3"
-              style="width: 20rem; height: 20rem">
-              <img src="./Assets/photos/Screenshot_20210413_213429.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-              <h5 class="card-title">Jaunt</h5>
-              <p class="card-text">
-                  This is my first project ever created within a timeframe of
-                  four days with two other group mates.</p>
-              <a href="https://github.com/kevinrhidalgo/SuperGroup-ProjectOne-" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-
-            <div
-              class="card text-white bg-secondary mb-3"
-              style="width: 20rem; height: 22rem">
-              <img src="./Assets/photos/Screenshot_20210413_213304.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-              <h5 class="card-title">Password Gen</h5>
-              <p class="card-text">
-                  This is a password generator I created all on my own using Javascript.</p>
-              <a href="https://github.com/T-Heier/password-gen" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-
-            <div
-              class="card text-white bg-secondary mb-3"
-              style="width: 20rem; height: 15rem">
-              <img src="./Assets/photos/Screenshot_20210413_213338.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-              <h5 class="card-title">Coding Quiz</h5>
-              <p class="card-text">
-                  This project I used Javascript to make a short simple quiz!</p>
-              <a href="https://github.com/T-Heier/Code-quiz" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-          
-
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Trent Heier</div>
+          <div class="text-3">I'm a <span> Web Developer</span></div>
         </div>
-      </section>
-    </main>
-
-    <section class="container">
-      <div id="contact">
-        <h2>Contact</h2>
-        <ul>
-          <li>828-557-0077</li>
-          <li>trentheier@gmail.com</li>
-          <a a href="https://github.com/T-Heier" target="_blank">Github</a>
-          <a a href="https://www.linkedin.com/in/trent-heier-915233210/" target="_blank">LinkedIn</a>
-        </ul>
       </div>
     </section>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos officiis non atque, doloribus, alias adipisci magnam nemo incidunt vel officia quaerat debitis quis laudantium provident temporibus ex. Maxime, eveniet!</p>
+
+    <script src="Assets/script.js"></script>
+
+
   </body>
 </html>
