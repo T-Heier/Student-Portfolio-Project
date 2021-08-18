@@ -112,7 +112,7 @@ body {
 
 /* media queries */
 
-@media (max-width: 947px){
+/* @media (max-width: 947px){
     .max-width {
         padding: 0 50px;
     }
@@ -135,6 +135,30 @@ body {
         margin: 20px 0;
         font-size: 25px;
     }
+} */
+
+.About {
+    height: 50vh;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+
+.About h1 {
+    padding: 15px;
+    font-size: 60px;
+    text-align: left;
+}
+
+.About p {
+    padding: 15px;
+    font-size: 24px;
+}
+
+.About li {
+    padding: 15px;
+    font-size: 24px;
 }
 
 
