@@ -82,8 +82,8 @@ body {
     background: url(../photos//george-pagan-iii-WwCTFNpZx8g-unsplash.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
-    color: white;
+    height: 50vh;
+    color: black;
     min-height: 500px;
 }
 
@@ -108,6 +108,49 @@ body {
 
 .home .home-content .text-3 span{
     color: orange;
+}
+
+.about .about-content {
+    margin: 25px;
+    color: black;
+    min-height: 300px;
+}
+
+.about-content .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content h1 {
+    font-size: 56px;
+}
+
+.about .about-content .mainAbout {
+    font-size:24px;
+}
+
+.about .about-content .supportingAbout {
+    font-size: 24px;
+}
+
+
+.contact {
+    color: white;
+}
+
+.contact .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .contact-info h1 {
+    font-size: 56px;
+}
+
+.contact .contact-content .contact-info p {
+    font-size: 24px;
 }
 
 /* media queries */
