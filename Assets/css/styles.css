@@ -141,6 +141,8 @@ body {
 
 .about {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -152,6 +154,30 @@ body {
     margin: auto 0 auto 40px;
 }
 
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 15vh;
+    width: 100vh;
+    background-color: rgb(127, 255, 212, 0.3);
+}
+
+.about .about-content h1 {
+    margin: 15px 30px 15px 15px;
+    font-size: 50px;
+}
+
+.about .about-content .mainAbout {
+    margin: 15px 15px 15px 15px;
+    font-size: 24px;
+}
+
+.about .about-content .supportingAbout {
+    margin: 15px 15px 15px 15px;
+    font-size: 24px;
+}
 
 #contact {
     color: blue;
